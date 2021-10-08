@@ -415,5 +415,49 @@
   },
   {
     "name":"com.sun.jna.win32.DLLCallback"
+  },
+  {
+    "name" : "com.sun.jna.platform.win32.Kernel32",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true,
+    "allDeclaredFields":true,
+    "methods" : [
+      { "name" : "GetDiskFreeSpaceEx", "parameterTypes" : ["java.lang.String", "com.sun.jna.platform.win32.WinNT$LARGE_INTEGER", "com.sun.jna.platform.win32.WinNT$LARGE_INTEGER", "com.sun.jna.platform.win32.WinNT$LARGE_INTEGER"] }
+    ]
+  },
+  {
+    "name" : "com.sun.jna.platform.win32.Advapi32",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true,
+    "allDeclaredFields":true,
+    "methods" : [
+      { "name" : "GetLengthSid", "parameterTypes" : ["com.sun.jna.platform.win32.WinNT$PSID"] }
+    ]
+  },
+  {
+    "name" : "com.sun.jna.platform.win32.Ole32",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true,
+    "allDeclaredFields":true,
+    "methods" : [
+      { "name" : "CoCreateInstance", "parameterTypes" : ["com.sun.jna.platform.win32.Guid$GUID", "com.sun.jna.Pointer", "int", "com.sun.jna.platform.win32.Guid$GUID", "com.sun.jna.ptr.PointerByReference"] }
+    ]
+  },
+  {
+    "name" : "com.sun.jna.platform.win32.OleAuto",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true,
+    "allDeclaredFields":true,
+    "methods" : [
+      { "name" : "SafeArrayGetLBound", "parameterTypes" : ["com.sun.jna.platform.win32.OaIdl$SAFEARRAY", "com.sun.jna.platform.win32.WinDef$UINT", "com.sun.jna.platform.win32.WinDef$LONGByReference"] }
+    ]
   }
 ]
